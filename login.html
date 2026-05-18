@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahdypaperus | تسجيل الدخول</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-loaded">
+  <header class="site-header">
+    <div class="logo">Mahdypaperus</div>
+    <nav class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html">متجر</a>
+      <a href="about.html">عنّا</a>
+      <a href="contact.html">تواصل</a>
+      <a class="active" href="login.html">تسجيل الدخول</a>
+    </nav>
+    <button class="menu-toggle" aria-label="فتح القائمة">☰</button>
+  </header>
+
+  <main>
+    <section class="section-panel animate-section">
+      <div class="section-header">
+        <h2>حسابك في Mahdypaperus</h2>
+        <p>سجل دخولك لإدارة الطلبات، الدفع، والتوصيل بسرعة.</p>
+      </div>
+      <div class="auth-grid">
+        <form id="login-form" class="form-panel auth-card">
+          <h3>تسجيل الدخول</h3>
+          <label>
+            البريد الإلكتروني
+            <input type="email" name="email" placeholder="email@example.com" required />
+          </label>
+          <label>
+            كلمة المرور
+            <input type="password" name="password" placeholder="كلمة المرور" required />
+          </label>
+          <button class="btn btn-primary" type="submit">دخول</button>
+        </form>
+
+        <form id="register-form" class="form-panel auth-card">
+          <h3>إنشاء حساب جديد</h3>
+          <label>
+            الاسم الكامل
+            <input type="text" name="name" placeholder="اسمك" required />
+          </label>
+          <label>
+            البريد الإلكتروني
+            <input type="email" name="email" placeholder="email@example.com" required />
+          </label>
+          <label>
+            كلمة المرور
+            <input type="password" name="password" placeholder="اختر كلمة مرور" required />
+          </label>
+          <button class="btn btn-primary" type="submit">إنشاء حساب</button>
+        </form>
+      </div>
+      <div style="margin-top:0.8rem; text-align:center;">
+        <a href="reset.html" style="color:var(--primary); font-weight:700;">نسيت كلمة المرور؟</a>
+      </div>
+      <div id="auth-message" class="auth-message"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Mahdypaperus. تجربة حساب وتسجيل دخول.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

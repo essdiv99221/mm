@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahdypaperus | حسابي</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-loaded">
+  <header class="site-header">
+    <div class="logo">Mahdypaperus</div>
+    <nav class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html">متجر</a>
+      <a href="about.html">عنّا</a>
+      <a href="contact.html">تواصل</a>
+      <a class="active" href="account.html">حسابي</a>
+    </nav>
+    <button class="menu-toggle" aria-label="فتح القائمة">☰</button>
+  </header>
+
+  <main>
+    <section class="section-panel animate-section account-hero">
+      <div>
+        <p class="eyebrow">مرحبا بك</p>
+        <h1>لوحة التحكم الخاصة بك</h1>
+        <p>تابع طلباتك، خيارات الدفع، وجدولة التوصيل من هنا.</p>
+      </div>
+      <button id="logout-btn" class="btn btn-secondary">تسجيل الخروج</button>
+    </section>
+
+    <section class="section-panel animate-section account-summary">
+      <div class="section-header">
+        <h2>بيانات الحساب</h2>
+      </div>
+      <div class="account-card">
+        <p><strong>الاسم:</strong> <span id="account-name">-</span></p>
+        <p><strong>البريد الإلكتروني:</strong> <span id="account-email">-</span></p>
+      </div>
+    </section>
+
+    <section class="section-panel animate-section account-orders">
+      <div class="section-header">
+        <h2>طلباتي</h2>
+      </div>
+      <div id="orders-list" class="orders-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Mahdypaperus. إدارة الطلبات والمدفوعات.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

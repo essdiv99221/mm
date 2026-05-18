@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahdypaperus | المتجر</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-loaded">
+  <div class="page-overlay"></div>
+  <header class="site-header">
+    <div class="logo">Mahdypaperus</div>
+    <nav class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a class="active" href="products.html">متجر</a>
+      <a href="about.html">عنّا</a>
+      <a href="contact.html">تواصل</a>
+      <a href="login.html">تسجيل الدخول</a>
+    </nav>
+    <button class="menu-toggle" aria-label="فتح القائمة">☰</button>
+  </header>
+
+  <main>
+    <section class="products-hero section-panel">
+      <div>
+        <p class="eyebrow">تسوق ذكي وسريع</p>
+        <h1>اختر ورقك وأدواتك المكتبية الآن</h1>
+        <p>مجموعة كاملة من ورق A4 وLetter، دفاتر، أقلام ومستلزمات تغليف مع عروض خاصة لكل طلب.</p>
+      </div>
+      <div class="hero-actions">
+        <button class="btn btn-primary" id="open-cart">عرض السلة</button>
+        <a class="btn btn-secondary" href="#catalog">ابدأ التسوق</a>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog section-panel animate-section">
+      <div class="section-header">
+        <h2>القائمة الكاملة</h2>
+        <p>أسعار شفافة، مواصفات دقيقة، ومحتوى مرئي بسيط يساعدك تختار بسرعة.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card" data-id="a4-classy" data-price="34.99">
+          <span>ورق A4 Classy</span>
+          <p>80 جم، أبيض ناصع، مناسب للطباعة والنسخ.</p>
+          <div class="product-meta">
+            <strong>34.99 ج.م</strong>
+            <button class="btn btn-cart">أضف للسلة</button>
+          </div>
+        </article>
+        <article class="product-card" data-id="letter-pro" data-price="39.50">
+          <span>ورق Letter Pro</span>
+          <p>ورق مقاس Letter بجودة عالية ودعم طباعة متناغمة.</p>
+          <div class="product-meta">
+            <strong>39.50 ج.م</strong>
+            <button class="btn btn-cart">أضف للسلة</button>
+          </div>
+        </article>
+        <article class="product-card" data-id="stationery-kit" data-price="79.00">
+          <span>مجموعة مستلزمات</span>
+          <p>دفاتر، أقلام، وأدوات مكتبية أصيلة للمهام اليومية.</p>
+          <div class="product-meta">
+            <strong>79.00 ج.م</strong>
+            <button class="btn btn-cart">أضف للسلة</button>
+          </div>
+        </article>
+        <article class="product-card" data-id="gift-pack" data-price="59.00">
+          <span>طقم تغليف هدايا</span>
+          <p>شريط، أظرف، ورق تغليف بتصميم أنيق وسهل الاستخدام.</p>
+          <div class="product-meta">
+            <strong>59.00 ج.م</strong>
+            <button class="btn btn-cart">أضف للسلة</button>
+          </div>
+        </article>
+        <article class="product-card" data-id="notebook-pro" data-price="24.90">
+          <span>دفتر Pro</span>
+          <p>دفتر 100 صفحة مع غلاف سميك ومسطّر جيدًا.</p>
+          <div class="product-meta">
+            <strong>24.90 ج.م</strong>
+            <button class="btn btn-cart">أضف للسلة</button>
+          </div>
+        </article>
+        <article class="product-card" data-id="creative-pens" data-price="18.75">
+          <span>أقلام ألوان</span>
+          <p>باقة 12 قلم حبر ملون للكتابة والرسم.</p>
+          <div class="product-meta">
+            <strong>18.75 ج.م</strong>
+            <button class="btn btn-cart">أضف للسلة</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>سلتك</h3>
+      <button class="close-cart" aria-label="إغلاق السلة">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="empty-cart">لم تضف أي منتج بعد.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>المجموع</span>
+        <strong id="cart-total">0.00 ج.م</strong>
+      </div>
+      <button class="btn btn-primary checkout-button">الدفع الآن</button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <p>© 2026 Mahdypaperus. متجر ورق ومستلزمات مكتبية.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

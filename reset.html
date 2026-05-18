@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>استرجاع كلمة المرور</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-loaded">
+  <main>
+    <section class="section-panel animate-section">
+      <div class="section-header">
+        <h2>استرجاع الحساب</h2>
+        <p>أدخل بريدك الإلكتروني لإرسال رابط استرجاع (محاكاة محليّة).</p>
+      </div>
+      <form id="request-reset" class="form-panel">
+        <label>البريد الإلكتروني
+          <input type="email" name="email" required />
+        </label>
+        <button class="btn btn-primary" type="submit">إرسال رابط الاسترجاع</button>
+      </form>
+
+      <div class="section-header" style="margin-top:1.6rem;">
+        <h2>إعادة ضبط كلمة المرور</h2>
+        <p>إذا وصلك رمز الاسترجاع، أدخله هنا لتعيين كلمة مرور جديدة.</p>
+      </div>
+      <form id="perform-reset" class="form-panel">
+        <label>البريد الإلكتروني
+          <input type="email" name="email" required />
+        </label>
+        <label>الرمز
+          <input name="token" placeholder="أدخل الرمز" required />
+        </label>
+        <label>كلمة المرور الجديدة
+          <input type="password" name="password" required />
+        </label>
+        <button class="btn btn-primary" type="submit">إعادة تعيين</button>
+      </form>
+      <div id="reset-message" class="auth-message"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

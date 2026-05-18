@@ -1,0 +1,12 @@
+{
+  "name": "mahdypaperus",
+  "version": "1.0.0",
+  "description": "Mahdypaperus store with Railway backend for hidden admin login",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.4"
+  }
+}

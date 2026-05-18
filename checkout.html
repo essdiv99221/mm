@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahdypaperus | الدفع</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-loaded">
+  <header class="site-header">
+    <div class="logo">Mahdypaperus</div>
+    <nav class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html">متجر</a>
+      <a href="about.html">عنّا</a>
+      <a href="contact.html">تواصل</a>
+      <a href="login.html">تسجيل الدخول</a>
+    </nav>
+    <button class="menu-toggle" aria-label="فتح القائمة">☰</button>
+  </header>
+
+  <main>
+    <section class="section-panel animate-section">
+      <div class="section-header">
+        <h2>الدفع وإنهاء الطلب</h2>
+        <p>اختر طريقة الدفع التي تناسبك وحدد تفاصيل التوصيل.</p>
+      </div>
+      <div id="checkout-summary" class="checkout-summary"></div>
+      <form id="checkout-form" class="form-panel checkout-panel">
+        <label>
+          عنوان التوصيل
+          <input type="text" name="address" placeholder="شارع، حي، مدينة" required />
+        </label>
+        <label>
+          رقم الهاتف
+          <input type="tel" name="phone" placeholder="0100 123 4567" required />
+        </label>
+          <div class="payment-options">
+            <p style="color:var(--text); font-weight:700;">طريقة الدفع: الدفع عند الاستلام (كاش عند التوصيل)</p>
+          </div>
+        <button class="btn btn-primary" type="submit">تأكيد الطلب</button>
+      </form>
+      <div id="auth-message" class="auth-message"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Mahdypaperus. صفحة الدفع والتسليم.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

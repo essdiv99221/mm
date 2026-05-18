@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahdypaperus | لوحة المدير</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-loaded">
+  <header class="site-header">
+    <div class="logo">Mahdypaperus</div>
+    <nav class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html">متجر</a>
+      <a href="account.html">حسابي</a>
+      <a class="active" href="admin.html">لوحة المدير</a>
+    </nav>
+    <button class="menu-toggle" aria-label="فتح القائمة">☰</button>
+  </header>
+
+  <main>
+    <section class="section-panel animate-section admin-hero">
+      <div>
+        <p class="eyebrow">لوحة الإدارة</p>
+        <h1>إدارة الموقع والطلبات</h1>
+        <p>إضافة منتجات، تعديل الأسعار، متابعة الطلبات، وإدارة المستخدمين.</p>
+      </div>
+    </section>
+
+    <section class="section-panel animate-section admin-section">
+      <div class="section-header">
+        <h2>المنتجات</h2>
+      </div>
+      <div class="admin-grid">
+        <div id="admin-products" class="admin-list"></div>
+        <form id="admin-add-product" class="form-panel admin-form">
+          <h3>أضف/حدّث منتج</h3>
+          <label>معرّف (id)
+            <input name="id" placeholder="a4-classy" required />
+          </label>
+          <label>الاسم
+            <input name="name" placeholder="اسم المنتج" required />
+          </label>
+          <label>السعر
+            <input name="price" type="number" step="0.01" placeholder="34.99" required />
+          </label>
+          <label>الوصف
+            <input name="desc" placeholder="وصف قصير" />
+          </label>
+          <button class="btn btn-primary" type="submit">حفظ المنتج</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-panel animate-section admin-section">
+      <div class="section-header">
+        <h2>الطلبات</h2>
+      </div>
+      <div id="admin-orders" class="admin-list"></div>
+    </section>
+
+    <section class="section-panel animate-section admin-section">
+      <div class="section-header">
+        <h2>المستخدمون</h2>
+      </div>
+      <div id="admin-users" class="admin-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Mahdypaperus. لوحة المدير.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
